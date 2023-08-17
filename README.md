@@ -1,2 +1,0 @@
-# sindy
-sindy library
