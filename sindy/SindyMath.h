@@ -7,7 +7,6 @@
 
 namespace sindy
 {
-
 inline double getAbs(double dValue)
 {
     if (dValue > 0)
@@ -27,6 +26,16 @@ inline int compare(const double src1, const double src2, double tol = SINDY_ZERO
     else
         return -1;
 }
+
+// 四舍五入
+double roundFloat(double value, uint8_t num);
+
+// 四舍五入并去除尾部无效的0
+std::string simplifyFloat(double value, uint8_t num);
+// 去除尾部的0，"1.4142100" -> "1.41421"
+void trimInvalid0(std::string& strFloat);
+
+uint64_t powTen(uint8_t num);
 
 } // namespace sindy
 
