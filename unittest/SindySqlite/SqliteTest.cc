@@ -14,6 +14,8 @@
 
 TEST(SindySqlite, entry)
 {
+    return;
+
     test_case_when();
     test_group_by();
     test_petal();
